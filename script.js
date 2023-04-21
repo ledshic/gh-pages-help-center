@@ -42,7 +42,6 @@ var fuseOptions = {
         'body',
     ],
 };
-var converter = new showdown.Converter();
 var fetchPage = function () {
     var xhr = new XMLHttpRequest();
     xhr.onload = () => {
@@ -124,7 +123,7 @@ var openPage = function () {
             var title = document.getElementById(modalTitleId);
             title.innerHTML = allIssues[r].title;
             var bodyContent = document.getElementById(modalContentId);
-            bodyContent.innerHTML = converter.makeHtml(allIssues[r].body);
+            bodyContent.innerHTML = marked.parse(allIssues[r].body);
             found = true;
             openModal();
         }
