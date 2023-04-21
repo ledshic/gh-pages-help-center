@@ -424,7 +424,7 @@ input[type='search'] {
     -moz-border-radius: 15px;
     border-radius: 15px;
     left: 50%;
-    top: -120%;
+    top: -180%;
     transform: translate(-50%, -50%);
     background: var(--c-modal-bg);
     color: var(--c-modal-text);
