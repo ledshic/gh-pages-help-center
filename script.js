@@ -149,7 +149,7 @@ var runSearch = function () {
                 '</a>';
         }
     } else {
-        resultsHtml += '<h5>No results :(</h5>';
+        resultsHtml += '<h5>未找到问题 :(</h5>';
     }
     var searchResults = document.getElementById(searchResultsId);
     searchResults.innerHTML = resultsHtml;
